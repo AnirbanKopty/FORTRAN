@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "command": "gfortran",
+    "args": [
+        "-g",
+        "-Wall",
+        "${file}",
+        "-o",
+        "${workspaceRoot}\\${fileBasenameNoExtension}.exe"
+    ],
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    }
+}

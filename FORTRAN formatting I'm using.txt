@@ -1,0 +1,6 @@
+All the FORTRAN commands are in CAPS
+
+while all the parameters and stuffs are in smalls
+
+Autocompletion in FORTRAN IntelliSense made all 
+the code-blocks to be in small

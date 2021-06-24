@@ -1,0 +1,16 @@
+Syntax is like below (no condition needed unlike other languages)
+DO
+    repeatative code-block
+END DO
+
+alternative of `break` statement in FORTRAN :
+EXIT
+
+
+alternative to `for` loop in FORTRAN :
+DO var=start, stop, increment
+    repeatative code-block
+END DO
+
+start, stop, increment are all INTEGERS
+not boolean or conditions
