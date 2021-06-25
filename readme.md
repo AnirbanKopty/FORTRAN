@@ -6,6 +6,3 @@ https://nptel.ac.in/courses/115/106/115106118/
 
 ## Comment
 I have created this repo to store all my `FORTRAN90 codes` as I continue to learn it
-
-
-test
