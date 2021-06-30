@@ -14,6 +14,9 @@ PROGRAM format_spec
     ! NOTE: in this precision, exponentiation is writted as 5.4D6 = 5.4 x 10^6
     ! Note the 'D' in place of 'E'
 
+    REAL*16 :: l = 5.12345678901234567890123456789
+    ! 16byte or 4 word space for a number (long double in case of C), but it really is not useful, maybe due to my PC's 64bit or 8byte limitations
+
     ! NOTE: So, likewise to declare a real number for real arithmatic, we use 5.0 (REAL) in place of 5 (INTEGER)
     ! For, DOUBLE PRECISION, we use 5.0d0 which means 5.0 x 10^0 = 5 (DOUBLE)
 
@@ -64,6 +67,8 @@ PRINT *, '------------------# REAL*8 (DOUBLE PRECISION)'
                                 !Though yes, the numbers aren't matching exactly due to binary limitations
     PRINT '(f13.10)', k         ! Thus, Double formatting are same as the Single precision ones
     PRINT '(f0.30)', k          ! Now, there are 20 digits! (refer :47 for meaning of 0.) (refer :57 for the digits)
+
+    PRINT *, l                  ! To check 16byte or 8 word space number
 
 PRINT *, '------------------# Array'
     PRINT *, v                  ! Default format for arrays
