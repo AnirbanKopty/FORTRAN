@@ -92,4 +92,7 @@ PRINT *, '------------------# Exponential formats'
     ! Thus A means Character, whereas 1x, 2x means blank spaces
     ! Aw is the general form with w=width of the character to be printed
 
+    ! For new line, use "/" inside the formatters
+    PRINT '(/,/,a,/)', "Two new lines before, with one new line below"
+
 END PROGRAM format_spec
