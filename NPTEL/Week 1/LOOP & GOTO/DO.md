@@ -28,3 +28,14 @@ END DO
 ```
 start, stop, increment are all INTEGERS
 not boolean or conditions
+
+## Implied DO Loop
+
+```FORTRAN
+! Use an implied do loop to print each row
+    print "(5i2)", ( array(m), m = 1,5 )
+```
+
+This will result as:  
+`array(1) array(2) array(3) array(4) array(5)`  
+(as integer values of length 2)
