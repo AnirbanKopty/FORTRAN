@@ -22,6 +22,9 @@ PROGRAM format_spec
 
     REAL, DIMENSION(5) :: v = (/1.1, 1.2, 1.4, 1.6, 1.9/)       ! Array of 5 REALs
 
+    CHARACTER(LEN=15), PARAMETER :: &           ! & is used to break lines, FORTRAN considers the next line to be in place of &
+        FORMAT_1 = "(A,2x,I5,F10.5)"
+
     ! SYNTAX :
     ! PRINT '(nix)', <parameters>
     ! n means number of variables to be printed in the same format
@@ -95,4 +98,17 @@ PRINT *, '------------------# Exponential formats'
     ! For new line, use "/" inside the formatters
     PRINT '(/,/,a,/)', "Two new lines before, with one new line below"
 
+    ! You can also write strings within formattings
+    PRINT '("Hello",1x,i5)', i
+
+    ! string formatting can also be done like this way, this helps when you
+    !need to write the same formattings again
+    PRINT FORMAT_1, "String", i, j          ! This is done by simply using a predefined character variable, see :25
+
+    ! Another way of acomplishing the same task, here, we don't need a predefined varible, we are using label
+    PRINT 100, i, j, k
+    100 format(i5, f10.7, f20.15)           ! This is how format label is defined
+
+    PRINT 100, i, k, k
+    
 END PROGRAM format_spec
