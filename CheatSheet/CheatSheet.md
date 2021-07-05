@@ -48,7 +48,7 @@ print *, "Hello ", trim(f_name), " ", trim(l_name)
 ```
 
 
-# VARIABLES / DATA TYPES
+## VARIABLES / DATA TYPES
 
 ```FORTRAN
 ! Variables must start with a letter
@@ -88,7 +88,7 @@ print "(a7, i1)", "Double ", kind(dbl_num)
 print "(a8, i1)", "Logical ", kind(can_vote)
 ```
 
-## ----- FORMATTED OUTPUT WITH PRINT -----
+## FORMATTED OUTPUT WITH PRINT
 
 ```FORTRAN
 ! character(len=5) :: i_char
