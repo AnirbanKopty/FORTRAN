@@ -1,10 +1,5 @@
 # FORTRAN CheatSheet
 
-> It's a Cheat Sheet, don't expect to run it.  
-The errors are not actually errors, these are only due to the facts that Variable Declaration must be done at the beginning only.  
-If you look carefully, you can notice that fact
-
-
 A module we will use later compiled like this  
 `gfortran -c mult_mod.f90  fortrantut.f90`  
 Run like this  
