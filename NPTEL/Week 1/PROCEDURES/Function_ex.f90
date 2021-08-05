@@ -30,3 +30,5 @@ END FUNCTION mynorm
 
 
 ! Note that FUNCTIONS are actually treated as Variables in FORTRAN
+
+! Note, if there is an extra parameter in the FUNCTION definition and we don't use that, then it gives an warning only.
