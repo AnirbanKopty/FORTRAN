@@ -1,6 +1,6 @@
 # GNUPlot Guideline
 
-## Directory Navigation
+### Directory Navigation
 
 Usual terminal commands like `cd`, `pwd`
 
@@ -37,9 +37,11 @@ The default is `with points` (which shows the points only)
 > Also, we can shorten the commands by using only initials  
 > `plot "data.dat" title "TitleName" linetype 7 linecolor 0 with linespoints`  
 > is the same as  
-> `plot "data.dat" t "TitleName" lt 7 lc 0 w lp`
+> `p "data.dat" t "TitleName" lt 7 lc 0 w lp`
 
-### Commands
+<br>
+
+### Commands:
 
 To change the x or yrange, use `set xrange [a:b]`
 
@@ -51,7 +53,27 @@ To set grids, use `set grid`
 
 > Tip: Use `help <command>` to get insight of the command
 
+<br>
+
+### Plotting the data in an external graphic image:
+
+For that we need to change the terminal to 'png'  
+Use `set terminal png size 800,600`
+
+> Use `pngcairo` instead of `png` to be able to incorporate some different symbols like pi ({/Symbol p}).
+
+(There are a whole lot of options available for customization)
+
+Now, we need to set the output to a Graphic image  
+Use `set output "ImageName.png"`  
+It'll create a file named "ImageName.png" within the working directory, and now, whatever plot we will do, will be done inside that .png file
+
+To set the terminal back to the default i.e. plotting in window,  
+Use `set terminal wxt`
+
+> We can the `size` parameter to specify the size in pixels here as well
+
 
 <br>
 
-- Source : [gnuplot Tutorial 1: basic Plotting tips & tricks, errorbars, png output](https://www.youtube.com/watch?v=9QUtcfyBFhE)
+- Source : [gnuplot Tutorial by MathAndPhysics](https://www.youtube.com/playlist?list=PLaYBfUc8SG7W4cTZprVWjbtwrottWuk8c)
