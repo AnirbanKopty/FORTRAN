@@ -1,9 +1,14 @@
 program mean_std
     implicit none
     
-    INTEGER :: dim = 1000, i
-    REAL, ALLOCATABLE :: array(:)
+    INTEGER :: dim                      ! #Random Numbers
+    INTEGER :: i
+    REAL*8, ALLOCATABLE :: array(:)
     REAL*8 :: mean, mean_sq=0, std
+
+
+    PRINT *, "Enter the count of Random Numbers you want : "
+    READ *, dim
 
     ALLOCATE(array(dim))
 
@@ -20,7 +25,7 @@ program mean_std
 
     std = SQRT( mean_sq - mean**2 )
 
-    PRINT '(A,i5,1X,A,F7.5,/,A,F7.5)', "So, the mean of the ", dim, "Random Numbers is : ", mean, &
+    PRINT '(A,i10,1x,A,F7.5,/,A,F7.5)', "So, the mean of the ", dim, "Random Numbers is : ", mean, &
         & "And, the Standard Deviation is : " , std
 
     PRINT *, "Usually, for 'TRUE' Uniform Random Numbers in the range [0,1], the mean should be 0.5 & 

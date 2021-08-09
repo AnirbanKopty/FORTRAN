@@ -6,7 +6,7 @@ SUBROUTINE Random_Gen(dim, array)
     ! n = number of random numbers
     ! i = iterable
 
-    REAL ::  array(dim)
+    REAL*8 ::  array(dim)
     ! Random Number array of given dimension
 
 
