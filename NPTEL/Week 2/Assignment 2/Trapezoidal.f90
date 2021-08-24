@@ -1,4 +1,4 @@
-! I = \int_0^{1/2} \sqrt{1-t^2} dt with 100 gridpoints in double precision floats
+! I = \int_0^{1/2} \sqrt{1-t^2} dt with n gridpoints in double precision floats
 
 program trapezoidal
     implicit none
@@ -25,7 +25,7 @@ program trapezoidal
     sum = sum * h/2.d0
 
     ! RESULT
-    PRINT *, "The result to the integration I = \int_0^{1/2} \sqrt{1-t^2} dt with 100 gridpoints in double precision floats is :"
+    PRINT *, "The result to the integration I = \int_0^{1/2} \sqrt{1-t^2} dt with ", n," gridpoints in double precision floats is :"
     PRINT *, sum
 
 end program trapezoidal

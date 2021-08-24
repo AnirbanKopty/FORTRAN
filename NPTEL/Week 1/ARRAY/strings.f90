@@ -14,3 +14,6 @@ program string
     Print *, s1, ' ', s4, ' ', hey
 
 end program string
+
+
+! You must know that the dimension and the len is a different thing
