@@ -1,0 +1,13 @@
+Write a program that does the following: 
+Calculate the sum of 1000000 integer random numbers, 
+which can take value only as +2 or -2: 
+call the sum as a1 and store in an array summ_r(1). 
+Use a do loop and calculate this sum of 10000 times using a different seed each time. 
+ore the value of each sum in summ_r(1),  
+summ_r(2),  summ_r(3)........   summ_r(10000). 
+The array summ_r of course has 10000 as size, it can store 10000 entries. 
+Plot a histogram using the values obtained and stored in summ_r 
+(Which means: count how many times the value of the sum lies between -10000 to -9990, 
+-9990 to -9980 ... -10 to 0, 
+between 0-10, between 10-20, between 20-30, ...... 9990 and 10000). 
+Answer the following questions
