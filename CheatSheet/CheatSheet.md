@@ -250,8 +250,7 @@ real, dimension(1:50) :: aR1
 integer, dimension(5,5) :: a4
 integer :: n, m, x, y
 
-Define an array thats size is determined
-at run time
+! Define an array thats size is determined at run time
 integer, dimension(:), allocatable :: a5
 integer :: num_vals = 0
 
