@@ -1,3 +1,5 @@
+# The Questions
+
 1. To check whether a number is armstrong number or not- generalised  form
 
 2. To obtain the number of nodes for a particle in a box using Newton Raphson method
