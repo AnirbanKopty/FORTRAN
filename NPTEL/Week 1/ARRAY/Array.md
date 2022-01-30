@@ -22,3 +22,16 @@ whereas y axis as 1,2,3 (default indexing)
 total no of items = n-m+1
 >
 >Array accessing: `<arr>`(m,n)
+
+<br>
+
+## To define Arrays like numpy.linspace(), use
+```Fortran
+real :: a(10) = (/(i, i=2,20, 2)/)
+print *, a
+```
+prints 2 to 20 with 2 steps in real
+```
+2.0000 4.0000 ... 20.0000
+```
+This is called `array constructor`

@@ -257,6 +257,13 @@ integer :: num_vals = 0
 integer, dimension(1:9) :: a6 = (/ 1,2,3,4,5,6,7,8,9 /)
 integer, dimension(1:3,1:3) :: a7
 
+! Array Constructor (Similar to numpy.linspace in Python)
+real :: a(10) = (/(i, i=2,20, 2)/)
+print *, a
+! prints 2 to 20 with 2 steps in real
+! 2.0000 4.0000 ... 20.0000
+
+
 ! Assign values (Starts at index 1)
 a1(1) = 5
 ! Retrieve value
