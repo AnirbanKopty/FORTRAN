@@ -7,6 +7,7 @@ In FORTRAN, list/Array syntax is :
 or
 <DTYPE> :: <var>(<dim>)
 ```
+
 > `<DTYPE>` means Datatype
 
 So, we can create an array of any datatype with fixed size
@@ -26,12 +27,17 @@ total no of items = n-m+1
 <br>
 
 ## To define Arrays like numpy.linspace(), use
+
 ```Fortran
-real :: a(10) = (/(i, i=2,20, 2)/)
+real :: a(10) = (/(i, i=2,20, 2)/) !or
+real :: a(10) = [(i, i=2,20, 2)]
 print *, a
 ```
+
 prints 2 to 20 with 2 steps in real
+
 ```
 2.0000 4.0000 ... 20.0000
 ```
+
 This is called `array constructor`
