@@ -42,7 +42,6 @@ read *, f_name, l_name
 print *, "Hello ", trim(f_name), " ", trim(l_name)
 ```
 
-
 ## VARIABLES / DATA TYPES
 
 ```FORTRAN
@@ -119,7 +118,7 @@ write (i_char, "(i5)") 10
 print "(a,a)", "A Number ", adjustl(i_char)
 ```
 
-## MATH OPERATORS 
+## MATH OPERATORS
 
 ```FORTRAN
 real :: float_num = 1.111111111111111
@@ -350,7 +349,6 @@ print "(i3)", product(a1)
 print "(i2)", sum(a1)
 ```
 
-
 ## FORMAT
 
 ```FORTRAN
@@ -444,7 +442,7 @@ do n = 1, 2
 end do
 ```
 
-## FUNCTIONS 
+## FUNCTIONS
 
 ```FORTRAN
 ! Functions contain statements that return
