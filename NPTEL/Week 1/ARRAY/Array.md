@@ -36,7 +36,7 @@ print *, a
 
 prints 2 to 20 with 2 steps in real
 
-```
+```BASH
 2.0000 4.0000 ... 20.0000
 ```
 
