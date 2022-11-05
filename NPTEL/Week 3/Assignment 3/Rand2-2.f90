@@ -48,5 +48,6 @@ program Rand
     do n = 1, sum_dim
         WRITE(15,*) summ_r(n)
     end do
+    CLOSE(15)
 
 end program Rand
