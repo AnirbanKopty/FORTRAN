@@ -16,7 +16,14 @@ ax[1].set_ylim(-0.005,0.03)
 ax[0].set_yticks([])
 ax[1].set_yticks([])
 
+ax[0].set_xlabel("x")
+ax[1].set_xlabel("x")
+
+ax[0].set_ylabel("$\psi$")
+ax[1].set_ylabel("$\psi^2$")
+
 ax[0].legend()
 ax[1].legend()
 
+plt.suptitle("Wave Functions of Particle in a Box")
 plt.show()
