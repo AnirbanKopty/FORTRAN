@@ -54,15 +54,15 @@ program HO
             end if
         end function
 
-        recursive function hermite(n,y) result(H)
+        recursive function hermite(n,y) result(Herm)
             INTEGER :: n
-            REAL*8 :: y, H 
+            REAL*8 :: y, Herm          ! Note that, Fortran is case-insensitive, thus h=H
             if (n == 0) then
-                H = 1
+                Herm = 1
             else if (n == 1) then
-                H = 2*y
+                Herm = 2*y
             else
-                H = 2*y* hermite(n-1,y) + 2*n* hermite(n-2,y)
+                Herm = 2*y* hermite(n-1,y) + 2*n* hermite(n-2,y)
             end if
         end function
 

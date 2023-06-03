@@ -47,6 +47,7 @@ program HO
 end program HO
 
 recursive function factorial(n) result(o)
+    implicit none
     INTEGER :: n, o
     if (n == 0 .or. n == 1) then
         o = 1
@@ -55,22 +56,28 @@ recursive function factorial(n) result(o)
     end if
 end function
 
-recursive function hermite(n,y) result(H)
+recursive real*8 function hermite(n,y) result(Herm)
+    implicit none
     INTEGER :: n
-    REAL*8 :: y, H 
+    REAL*8 :: y 
     if (n == 0) then
-        H = 1
+        Herm = 1
     else if (n == 1) then
-        H = 2*y
+        Herm = 2*y
     else
-        H = 2*y* hermite(n-1,y) + 2*n* hermite(n-2,y)
+        Herm = 2*y* hermite(n-1,y) + 2*n* hermite(n-2,y)
     end if
 end function
 
 function Psi(n, y) result(wavefn)
-    INTEGER :: n
-    REAL*8 :: y, wavefn
+    implicit none
+    INTEGER :: n, factorial
+    REAL*8 :: y, wavefn, hermite, PI, alpha
 
     wavefn = ( sqrt(alpha) / (2**n * factorial(n) * sqrt(PI)) ) * hermite(n,y) * exp(-(y**2)/2)
 
 end function Psi
+
+
+!! This code will return bad results, since, `alpha`, `PI` are not defined in the functions, thus will take garbage values, since
+!! it is not taken as argument from the main function.
